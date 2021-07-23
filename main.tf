@@ -11,6 +11,9 @@ provider "aws" {
   # Set secrets via environment variables
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
+  # Use env vars for security reasons
+  # TF_VAR_access_key = YOUR_ACCESS_KEY
+  # TF_VAR_secret_key = YOUR_SECRET_KEY
 }
 
 resource "aws_instance" "web" {
