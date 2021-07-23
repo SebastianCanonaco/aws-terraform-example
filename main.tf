@@ -11,8 +11,6 @@ provider "aws" {
   # Set secrets via environment variables
   access_key = "${var.access_key}"
   secret_key = "${var.secret_key}"
-  # export TF_VAR_access_key=AKIAT4JFFHLIXCINB6SY
-  # export TF_VAR_secret_key=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
 }
 
 resource "aws_instance" "web" {
